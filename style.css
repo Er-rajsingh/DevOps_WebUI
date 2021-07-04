@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+h1 {
+    color: aliceblue;
+    margin-top: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+}
+
+main-heading {
+    text-align: center !important;
+    color: aliceblue;
+}
+
+ul {
+    margin-top: 10px;
+    margin-left: 20%;
+    float: none;
+    list-style: none;
+    position: relative;
+}
+
+ul li:hover {
+    background-color: cyan;
+}
+
+ul li {
+    margin-right: 20px;
+    float: left;
+    display: inline-block;
+    background: black;
+}
+
+ul li a {
+    margin-top: 10px;
+    color: white;
+    text-decoration: none;
+    line-height: 40px;
+    font-size: 18px;
+    padding: 10px 15px;
+}
+
+body {
+    background-color: #000;
+    font-family: "Poppins", sans-serif;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.grid {
+    display: grid;
+    width: 114em;
+    grid-gap: 6rem;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    align-items: start;
+    margin-top: 50px;
+}
+
+.grid-item {
+    background: url(./img/img1.png);
+    border-radius: 0.4rem;
+    overflow: hidden;
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.grid-item:hover {
+    transform: translateY(-0.5%);
+    box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+}
+
+.docker-heading {
+    text-align: center;
+    text-decoration-style: solid;
+    -moz-text-decoration-style: solid;
+    font-size: large;
+}
+
+p {
+    font-size: 1em;
+}
+
+.card-input {
+    margin-top: 20px;
+    padding: 10px;
+    display: inline;
+    width: 200px;
+    size: 40px;
+}
+
+.card-input1 {
+    padding: 10px;
+    margin-left: 6px;
+    display: inline;
+    width: 300px;
+    size: 40px;
+}
+
+.output {
+    font-size: small;
+    margin: 20px 15px !important;
+    width: 90%;
+    height: 330px;
+    border: 1px solid gray;
+    margin: 0;
+    overflow: scroll;
+}
+
+span {
+    font-size: 2em;
+    margin-left: 35%;
+}
+
+button {
+    margin: 30px 75px;
+    background-color: #00ff00;
+    align-items: center !important;
+    border-radius: 0.8rem;
+    -webkit-border-radius: 0.8rem;
+    -moz-border-radius: 0.8rem;
+    -ms-border-radius: 0.8rem;
+    -o-border-radius: 0.8rem;
+}
+
+.submit-button {
+    padding: 10px 10px;
+    width: 50%;
+}
+
+.card-content {
+    padding: 3rem;
+}
+
+.footer-text {
+    color: #00ff00;
+    font-size: large;
+    text-align: center;
+    margin-top: 70px;
+}
+
+@media only screen and (max-width: 60em) {
+    body {
+        padding: 3rem;
+    }
+    .grid {
+        grid-gap: 3rem;
+    }
+}
